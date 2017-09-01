@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/fandres/Universidad/kicad/DRV8825_missing_microsteps/DRV8825_missing_microsteps.sch</source>
+    <date>jue 31 ago 2017 22:44:31 -05</date>
+    <tool>Eeschema 4.0.5+dfsg1-4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DRV8825 Missing Microsteps</title>
+        <company>Rootdevel</company>
+        <rev>1</rev>
+        <date/>
+        <source>DRV8825_missing_microsteps.sch</source>
+        <comment number="1" value="fAndRes"/>
+        <comment number="2" value="CC-4.0 Internacional By"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A5DF66</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A5E06F</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>S3G</value>
+      <footprint>Diodes_SMD:DO-214AB</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A5E172</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>S3G</value>
+      <footprint>Diodes_SMD:DO-214AB</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A5E1FC</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>S3G</value>
+      <footprint>Diodes_SMD:DO-214AB</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A5E229</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>S3G</value>
+      <footprint>Diodes_SMD:DO-214AB</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A5E258</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="2" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="4" name="Net-(D3-Pad1)">
+      <node ref="J2" pin="4"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="5" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+  </nets>
+</export>

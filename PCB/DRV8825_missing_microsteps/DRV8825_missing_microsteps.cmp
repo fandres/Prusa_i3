@@ -1,0 +1,51 @@
+Cmp-Mod V01 Created by PcbNew   date = jue 31 ago 2017 20:35:50 -05
+
+BeginCmp
+TimeStamp = 59A8A2F1
+Path = /59A5E172
+Reference = D1;
+ValeurCmp = S3G;
+IdModule  = Diodes_SMD:DO-214AB;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A8A2FD
+Path = /59A5E1FC
+Reference = D2;
+ValeurCmp = S3G;
+IdModule  = Diodes_SMD:DO-214AB;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A8A309
+Path = /59A5E229
+Reference = D3;
+ValeurCmp = S3G;
+IdModule  = Diodes_SMD:DO-214AB;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A8A315
+Path = /59A5E258
+Reference = D4;
+ValeurCmp = S3G;
+IdModule  = Diodes_SMD:DO-214AB;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A8A34C
+Path = /59A5DF66
+Reference = J1;
+ValeurCmp = Conn_01x04;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A8A35F
+Path = /59A5E06F
+Reference = J2;
+ValeurCmp = Conn_01x04;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x04;
+EndCmp
+
+EndListe

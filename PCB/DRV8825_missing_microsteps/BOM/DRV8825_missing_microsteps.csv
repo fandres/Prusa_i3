@@ -1,0 +1,23 @@
+Title,DRV8825 Missing Microsteps
+Revision,1
+Date,
+Generated,jue 31 ago 2017 22:43:22 -05
+Company,Rootdevel
+Comment 1,fAndRes
+Comment 2,CC-4.0 Internacional By
+Comment 3,
+Comment 4,
+Total Parts,6
+Total Unique Parts,2
+
+
+
+Ref,Qty,Value,Footprint,
+D1 D2 D3 D4 ,4,S3G,Diodes_SMD:DO-214AB
+J1 J2 ,2,Conn_01x04,Pin_Headers:Pin_Header_Straight_1x04
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated jue 31 ago 2017 22:43:22 -05
