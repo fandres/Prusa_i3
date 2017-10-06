@@ -352,10 +352,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // Ultimaker
-  #define  DEFAULT_Kp 21.04
-  #define  DEFAULT_Ki 1.87
-  #define  DEFAULT_Kd 59.03
+  // Prusa i3 (E3D V6)
+  #define  DEFAULT_Kp 20.51
+  #define  DEFAULT_Ki 1.76
+  #define  DEFAULT_Kd 59.65
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -381,7 +381,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -397,9 +397,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define  DEFAULT_bedKp 10.00
-  #define  DEFAULT_bedKi .023
-  #define  DEFAULT_bedKd 305.4
+  #define  DEFAULT_bedKp 1120.44
+  #define  DEFAULT_bedKi 184.33
+  #define  DEFAULT_bedKd 1698.03
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -407,7 +407,7 @@
   //#define  DEFAULT_bedKi 1.41
   //#define  DEFAULT_bedKd 1675.16
 
-  // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
+  // FIND YOUR OWN: "M303 E-1 C8 S60" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -526,14 +526,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 8000, 896 }  //892{ 80, 80, 4000, 500 } 8000 = (200pasos/1mm)*32 | (200/20_dientes)*32 ; Extrusor Titan -> Steps per Unit (Extruder) = Motor Steps * Micro-stepping * Gear Ratio / (Hobb Diameter * Pi) = (200*32*3)/(7.3*3.1412) = 837,3032555397204
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 8000, 896 } //{ 80, 80, 4000, 500 } 8000 = (200pasos/1mm)*32 | (200/20_dientes)*32 ; Extrusor Titan -> Steps per Unit (Extruder) = Motor Steps * Micro-stepping * Gear Ratio / (Hobb Diameter * Pi) = (200*32*3)/(7.3*3.1412) = 837,3032555397204
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 3, 25 }  //test   { 300, 300, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 3, 25 }  // { 300, 300, 5, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
