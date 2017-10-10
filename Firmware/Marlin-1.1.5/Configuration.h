@@ -682,7 +682,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 5 //10  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 37 //10  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0 //-0.4  // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0 //-0.9  // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -847,9 +847,9 @@
  *   leveling in steps so you can manually adjust the Z height at each grid-point.
  *   With an LCD controller the process is guided step-by-step.
  */
-//#define AUTO_BED_LEVELING_3POINT
+#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-#define AUTO_BED_LEVELING_BILINEAR
+//#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
@@ -874,7 +874,7 @@
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  #define LEFT_PROBE_BED_POSITION 15 //25 
+  #define LEFT_PROBE_BED_POSITION 15//bilinear:15 //3_ponts=25 
   #define RIGHT_PROBE_BED_POSITION 170 //170
   #define FRONT_PROBE_BED_POSITION 80 //7 // 37 , y =0 OFFSET_FROM_EXTRUDER
   #define BACK_PROBE_BED_POSITION 180 //170 ///65, y = 125-37 = 88
@@ -908,11 +908,11 @@
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
   #define ABL_PROBE_PT_1_X 15
-  #define ABL_PROBE_PT_1_Y 110//180 
+  #define ABL_PROBE_PT_1_Y 160//110//180 
   #define ABL_PROBE_PT_2_X 15
-  #define ABL_PROBE_PT_2_Y 57 //20  ///50 = 20 seguro + 37 offset extruder
+  #define ABL_PROBE_PT_2_Y 38//57 //20  ///50 = 20 seguro + 37 offset extruder
   #define ABL_PROBE_PT_3_X 170
-  #define ABL_PROBE_PT_3_Y 57 //20  ///50 = 20 seguro + 37 offset extruder
+  #define ABL_PROBE_PT_3_Y 80//57 //20  ///50 = 20 seguro + 37 offset extruder
 
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
@@ -1226,7 +1226,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
