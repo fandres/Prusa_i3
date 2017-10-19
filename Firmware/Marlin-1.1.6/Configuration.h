@@ -910,12 +910,12 @@
 
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X 15
-  #define ABL_PROBE_PT_1_Y 160 //180
-  #define ABL_PROBE_PT_2_X 15
-  #define ABL_PROBE_PT_2_Y 38 //50 = 20 seguro + 37 offset extruder
-  #define ABL_PROBE_PT_3_X 170
-  #define ABL_PROBE_PT_3_Y 80 //50 = 20 seguro + 37 offset extruder
+  #define ABL_PROBE_PT_1_X 10
+  #define ABL_PROBE_PT_1_Y 100 //180
+  #define ABL_PROBE_PT_2_X 170
+  #define ABL_PROBE_PT_2_Y 100 //50 = 20 seguro + 37 offset extruder
+  #define ABL_PROBE_PT_3_X 180
+  #define ABL_PROBE_PT_3_Y 180 //50 = 20 seguro + 37 offset extruder
 
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
@@ -1383,7 +1383,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // MakerLab Mini Panel with graphic
