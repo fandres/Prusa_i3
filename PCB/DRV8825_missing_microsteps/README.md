@@ -1,11 +1,11 @@
 ﻿## DRV8825 Missing Microsteps
+DRV8825 Missing Steps
 
-
-![3D_View-B](PCB/DRV8825_missing_microsteps/Images/3D_View-B.png)
+![DRV8825_missing_microsteps](/PCB/DRV8825_missing_microsteps/Images/DRV8825_missing_microsteps.jpg)
 
 ## BOM 
 Ref | Qty | Value | Footprint 
-
+--- | --- | ----- | --------
 D1 D2 D3 D4  | 4 | S3G SMC DO-214AB 
 J1 J2  | 2 | Conn_01x04 
 
@@ -15,13 +15,13 @@ J1 J2  | 2 | Conn_01x04
 
 
 # Images
-![3DF_3D_View-B](PCB/DRV8825_missing_microsteps/Images/3D_View-B.png)
+![PCB_Kicad](/PCB/DRV8825_missing_microsteps/Images/PCB_Kicad.png)
 
 
 # License 
 ======
 
-[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+[MIT License](/PCB/DRV8825_missing_microsteps/Images/LICENCE)
 
 # Attributions
 ============
