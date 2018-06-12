@@ -1,4 +1,11 @@
-﻿# Prusa_i3
+This repository is possibly outdated
+Este Repositorio se probablemente se encuentra desactualizado
+
+Repository migrated to https://gitlab.com/fandres323/Prusa_i3
+Repositorio migrado a https://gitlab.com/fandres323/Prusa_i3
+
+
+# Prusa_i3
 ============
 
 
